@@ -19,3 +19,4 @@ if (getCookie("cookie-consent") != "1") {
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
     return v ? v[2] : null;
+}
