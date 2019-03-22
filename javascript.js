@@ -3,7 +3,7 @@ $("#accept-cookies").click(function () {
 });
 document.cookie = 'cookie-consent=1';
 
-console.log(setCookie('cookie-consent'));
+console.log(getCookie('cookie-consent'));
 
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
