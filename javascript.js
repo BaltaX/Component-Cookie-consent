@@ -3,7 +3,7 @@ $("#accept-cookies").click(function () {
 });
 
 //Does cookie exist
-if (getCookie("cookie-consent")) == 1 {
+if (getCookie("cookie-consent") == 1) {
     //Remove display of box
     alert("Hittade cookie")
 } else {
