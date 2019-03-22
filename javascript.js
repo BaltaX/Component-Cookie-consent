@@ -9,7 +9,7 @@ $("#accept-cookies").click(function () {
 
 
 console.log(document.cookie);
-document.cookie = 'cookie-consent=2';
+
 
 //Set cookie to different valuest for testing purposes. Only if it is 1, the box should not be displayed
 //document.cookie = 'cookie-consent=2'
