@@ -1,7 +1,7 @@
 #cookie-consent {
     background-color: beige;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
