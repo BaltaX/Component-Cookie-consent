@@ -5,7 +5,8 @@ $("#accept-cookies").click(function () {
 //Does cookie exist
 if (getCookie("cookie-consent") == "1") {
     //Remove display of box
-    alert("Hittade cookie")
+    alert("Hittade cookie, lägger inte dit consent box");
+    $("#cookie-consent").css("display", "none");
 } else {
     alert("Hittade inte cookie")
 }
