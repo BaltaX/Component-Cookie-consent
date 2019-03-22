@@ -10,30 +10,12 @@ $("#accept-cookies").click(function () {
 
 console.log(document.cookie);
 
-
-//Set cookie to different valuest for testing purposes. Only if it is 1, the box should not be displayed
-//document.cookie = 'cookie-consent=2'
 //If cookie exists
 if (getCookie("cookie-consent") != "1") {
     $("#cookie-consent").css("display", "block");
-
-
-
-} else {
-
 }
 
-
-
-
-
-
-
-//document.cookie = 'cookie-consent=1';
-
-//console.log(getCookie('cookie-consent'));
-
+//Returns value of cookie if cookie 'name' exists, else returns null
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
     return v ? v[2] : null;
-}
