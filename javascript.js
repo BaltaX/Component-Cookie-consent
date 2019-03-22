@@ -1,7 +1,13 @@
 $("#accept-cookies").click(function () {
     $("#cookie-consent").css("display", "none");
-    document.cookie = 'cookie-consent=1';
+    var now = new Date();
+    var time = now.getTime();
+    time += 30 * 1000;
+    now.setTime(time);
+    document.cookie = 'cookie-consent=1;expires=' + now.toUTCString();
 });
+
+
 console.log(document.cookie);
 document.cookie = 'cookie-consent=2';
 
