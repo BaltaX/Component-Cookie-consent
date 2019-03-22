@@ -2,7 +2,7 @@ $("#accept-cookies").click(function () {
     $("#cookie-consent").css("display", "none");
     document.cookie = 'cookie-consent=1';
 });
-document.cookie = 'cookie-consent=1';
+document.cookie = 'cookie-consent=2';
 console.log(document.cookie);
 //Set cookie to different valuest for testing purposes. Only if it is 1, the box should not be displayed
 //document.cookie = 'cookie-consent=2'
